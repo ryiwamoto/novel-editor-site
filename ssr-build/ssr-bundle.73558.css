@@ -106,7 +106,7 @@ body {
 .editor__1I80g > div {
   width: 100%;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1023px) {
   .editor__1I80g {
     align-items: start;
   }
@@ -344,4 +344,4 @@ body {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.56f15.css.map*/
+/*# sourceMappingURL=ssr-bundle.73558.css.map*/
