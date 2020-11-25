@@ -132,6 +132,9 @@ body {
 .paragraph__3XZVW[data-is-dragging="true"] {
   opacity: 0;
 }
+.paragraph__3XZVW label {
+  display: none;
+}
 
 .textarea__lochO {
   background-color: white;
@@ -321,4 +324,4 @@ body {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.65998.css.map*/
+/*# sourceMappingURL=ssr-bundle.575ff.css.map*/
