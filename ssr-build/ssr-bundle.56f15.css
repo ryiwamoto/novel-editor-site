@@ -82,7 +82,7 @@ body {
 .editor__1I80g {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 
@@ -106,7 +106,7 @@ body {
 .editor__1I80g > div {
   width: 100%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .editor__1I80g {
     align-items: start;
   }
@@ -115,14 +115,24 @@ body {
   }
 }
 
+
+.dnd-poly-drag-image {
+    opacity: .5 !important;
+}
+
+.dnd-poly-drag-image.dnd-poly-snapback {
+    transition-property: transform !important;
+    transition-duration: 250ms !important;
+    transition-timing-function: ease-out !important;
+}
+
 .paragraph__3XZVW {
   margin: 0;
   margin-bottom: var(--space-block);
   padding: 0 !important;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-
+  flex-wrap: nowrap;
   justify-items: stretch;
   align-items: stretch;
   width: 100%;
@@ -132,9 +142,6 @@ body {
 .paragraph__3XZVW[data-is-dragging="true"] {
   opacity: 0;
 }
-.paragraph__3XZVW label {
-  display: none;
-}
 
 .textarea__lochO {
   background-color: white;
@@ -143,6 +150,9 @@ body {
   position: relative;
   flex-grow: 1;
   box-sizing: border-box;
+}
+.textarea__lochO .label-text__3th0i {
+  display: none;
 }
 .textarea__lochO textarea {
   resize: vertical;
@@ -181,6 +191,7 @@ body {
 
 .edit-form__1rRzC {
   width: 0;
+  flex: 0 0 auto;
   overflow: hidden;
   transition: width 0.1s ease-out;
   border-style: solid;
@@ -274,10 +285,12 @@ body {
   background-color: var(--background-color);
   color: var(--color-on-primary);
   z-index: 50;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .header__3ax1h h1 {
-  float: left;
   margin: 0;
   padding: 0 2rem;
   font-size: 1.3rem;
@@ -288,7 +301,6 @@ body {
 }
 
 .header__3ax1h nav {
-  float: right;
   font-size: 100%;
 }
 
@@ -322,6 +334,14 @@ body {
 .header__3ax1h > nav > a > svg path {
   fill: var(--color-on-primary);
 }
+@media screen and (max-width: 575px) {
+  .header__3ax1h > nav > a > span {
+    display: none;
+  }
+  .header__3ax1h h1 {
+    font-size: 0.5rem;
+  }
+}
 
 
-/*# sourceMappingURL=ssr-bundle.575ff.css.map*/
+/*# sourceMappingURL=ssr-bundle.56f15.css.map*/
