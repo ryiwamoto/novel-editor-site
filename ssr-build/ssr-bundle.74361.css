@@ -258,6 +258,7 @@ body {
   overflow: hidden;
   background-color: #fff;
   padding: var(--space-block);
+  overflow-y: scroll;
 }
 
 .preview__2K3aJ p {
@@ -350,4 +351,4 @@ body {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.9aa1f.css.map*/
+/*# sourceMappingURL=ssr-bundle.74361.css.map*/
