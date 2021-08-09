@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
 
   width: 100%;
@@ -341,4 +341,4 @@ body {
 }
 
 
-/*# sourceMappingURL=ssr-bundle.19f1b.css.map*/
+/*# sourceMappingURL=ssr-bundle.eb6ad.css.map*/
